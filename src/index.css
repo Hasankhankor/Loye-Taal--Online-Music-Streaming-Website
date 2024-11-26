@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-white font-base;
+}
+
+svg {
+  @apply cursor-pointer;
+}
+
+img {
+  @apply select-none;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.head-text {
+  @apply text-2xl font-bold text-[#EFEEE0];
+}
+
+.app__nav-icon-active .app__nav-icon {
+  @apply !fill-primary;
+}
+
+.app__nav-icon {
+  @apply w-[28px] h-[28px] lg:w-[22px] lg:h-[22px] cursor-pointer fill-[rgba(239,238,224,0.25)] lg:hover:fill-[rgba(239,238,224,0.6)] transition-all duration-300;
+}
+
+.app__nav-mobile {
+  @apply flex gap-x-6 items-center;
+}
+
+.app__nav-mobile:hover .app__nav-icon {
+  @apply fill-[rgba(239,238,224,0.6)];
+}
+
+.app__nav-mobile:hover span {
+  @apply text-[rgba(239,238,224,0.6)];
+}
+
+.app__nav-mobile span {
+  @apply font-bold text-[18px] text-[rgba(239,238,224,0.25)] transition-all duration-300;
+}
+
+.app__nav-mobile.app__nav-icon-active span {
+  @apply text-light;
+}
+
+@media screen and (max-width: 300px) {
+  .app__nav-offcanvas {
+    @apply w-full;
+  }
+}
+
+.collections-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.app__player {
+  backdrop-filter: blur(15px);
+  filter: drop-shadow(0px -25px 100px rgba(16, 16, 16, 0.51));
+  @apply translate-y-[];
+}
+
+.swiper-slide img {
+  @apply select-none;
+}
+
+.text-shadow {
+  text-shadow: 0 0 5px black;
+}
+
+/* Player Sliders */
+.app__player-slider {
+  @apply py-2.5 -mb-2.5 bg-transparent;
+}
+
+.app__player-volume .MuiSlider-thumb {
+  @apply hidden;
+}
+
+.app__player-slider .MuiSlider-rail,
+.app__player-slider .MuiSlider-track {
+  @apply h-1;
+}
+
+.app__player-volume .MuiSlider-rail,
+.app__player-volume .MuiSlider-track {
+  @apply h-[3px];
+}
+
+.MuiSlider-rail {
+  @apply text-[rgba(255,255,255,0.1)];
+}
+
+.MuiSlider-track {
+  @apply text-primary;
+}
+
+.MuiSlider-thumb {
+  @apply text-primary !w-2 !h-2 hover:!shadow-none !shadow-none;
+}
+
+.MuiSlider-thumb::after {
+  @apply !w-3 !h-3 !border !border-white transition-all duration-150;
+}
+
+.MuiSlider-thumb:hover::after,
+.MuiSlider-thumb:focus-within::after {
+  @apply !w-4 !h-4;
+}
