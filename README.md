@@ -2,7 +2,7 @@
 
 Welcome to Musica, your gateway to the world of online music streaming.
 
-![Screenshot 1](https://musica01.netlify.app//screenshots/page.png)
+![Screenshot 1]([https://musica01.netlify.app//screenshots/page.png](https://ik.imagekit.io/os33grffu/page.png?updatedAt=1732639210032))
 
 ## Table of contents
 
